@@ -1,0 +1,247 @@
+/* Google Fonts - Premium Typography */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;800&display=swap');
+
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #e67e22;
+    --text-color: #333;
+    --bg-color: #fff;
+    --muted-color: #7f8c8d;
+    --page-width: 210mm;
+    --page-height: 297mm;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+}
+
+body {
+    font-family: 'Crimson Pro', serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Container (Virtual Canvas) */
+.page-container {
+    width: var(--page-width);
+    margin: 20mm auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: var(--page-height);
+    position: relative;
+    padding: 25mm;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 32pt;
+    margin-top: 0;
+    border-bottom: 2pt solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 24pt;
+    margin-top: 40px;
+    color: var(--accent-color);
+}
+
+h3 {
+    font-size: 18pt;
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+p {
+    font-size: 12pt;
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4pt solid var(--accent-color);
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #fff9f4;
+    font-size: 13pt;
+}
+
+ul,
+ol {
+    font-size: 12pt;
+    margin-bottom: 1.5em;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+.tip-box {
+    background: #e8f4fd;
+    border-left: 4pt solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 11pt;
+}
+
+.tip-box strong {
+    color: #2980b9;
+}
+
+.side-note {
+    font-size: 10pt;
+    color: var(--muted-color);
+    border-left: 2pt solid #bdc3c7;
+    padding-left: 15px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.no-break {
+    page-break-inside: avoid;
+}
+
+/* Image Placeholders */
+.image-box {
+    width: 100%;
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.image-box p {
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+    color: var(--muted-color);
+    margin: 10px 0 0 0;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Print Specifics */
+@media print {
+    body {
+        background: white;
+    }
+
+    .page-container {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .section-page {
+        page-break-before: always;
+    }
+
+    h1,
+    h2 {
+        page-break-after: avoid;
+    }
+
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+
+    /* Prevent breaking inside these elements */
+    blockquote,
+    .tip-box,
+    .image-box {
+        page-break-inside: avoid;
+    }
+}
+
+/* Table of Contents */
+.toc {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.toc li {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toc a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.toc .page-num {
+    color: var(--muted-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.toc-part {
+    margin-top: 25px;
+    font-weight: 800;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 14pt;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Cover Page Unique Styles */
+.cover-page {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(var(--page-height) - 50mm);
+}
+
+.cover-title {
+    font-size: 32pt;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    max-width: 80%;
+}
+
+.cover-subtitle {
+    font-size: 20pt;
+    color: var(--accent-color);
+    font-weight: 400;
+}
+
+.cover-author {
+    font-size: 16pt;
+    margin-top: 100px;
+    font-weight: 600;
+}

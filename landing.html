@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penzil Pro - El Manual del Diseñador Profesional</title>
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container hero-content animate">
+            <h1>Penzil Pro: El Arte y la Ciencia del Bocetado 3D</h1>
+            <p>Domina el lenguaje visual que define a los grandes diseñadores. Desde los fundamentos de la línea hasta
+                el renderizado avanzado potenciado por IA.</p>
+            <div class="cta-group">
+                <a href="index.html" class="btn btn-primary">Leer Versión Web</a>
+                <a href="index.html?print=true" class="btn btn-outline">Generar Libro PDF</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SOBRE EL LIBRO -->
+    <section class="section">
+        <div class="container book-preview">
+            <div class="book-image animate">
+                <img src="images/book_cover.png" alt="Portada Super Sketching">
+            </div>
+            <div class="book-details animate">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Mucho más que un cuaderno de dibujo.</h2>
+                <p>Este libro es una guía integral diseñada para transformar tu proceso creativo. No se trata solo de
+                    hacer dibujos bonitos; se trata de <strong>pensar a través del trazo</strong>, de proyectar
+                    realidades industriales y de comunicar ideas complejas con autoridad técnica.</p>
+                <p>En sus 15 capítulos, exploramos la intersección entre la artesanía manual del sketching y las nuevas
+                    fronteras digitales del 3D y la Inteligencia Artificial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTES DEL LIBRO -->
+    <section class="section" style="background: var(--secondary-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Qué aprenderás?</h2>
+                <div></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate">
+                    <div class="feature-icon">01</div>
+                    <h3>Fundamentos</h3>
+                    <p>La psicología de la línea, la ergonomía del espacio y la mentalidad de un bocetista exitoso.</p>
+                </div>
+                <div class="feature-card animate">
+                    <div class="feature-icon">02</div>
+                    <h3>Perspectiva</h3>
+                    <p>Dominio total del espacio 3D, elipses perfectas y construcción de geometrías complejas.</p>
+                </div>
+                <div class="feature-card animate">
+                    <div class="feature-icon">03</div>
+                    <h3>Volumetría</h3>
+                    <p>Sistemas de rejillas, deconstrucción observacional y escultura visual mediante booleanas.</p>
+                </div>
+                <div class="feature-card animate">
+                    <div class="feature-icon">04</div>
+                    <h3>Renderizado</h3>
+                    <p>La física de la luz, técnicas de marcador profesional y reflejos avanzados en superficies
+                        premium.</p>
+                </div>
+                <div class="feature-card animate">
+                    <div class="feature-icon">05</div>
+                    <h3>Comunicación</h3>
+                    <p>Estrategias de ideación, vistas explotadas y el futuro del sketching con IA y XR.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Una Mirada al Interior</h2>
+                <div></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/penzil_drone.png" alt="Geometría Drone Penzil"></div>
+                <div class="gallery-item"><img src="images/advanced_surface_physics.png" alt="Superficies"></div>
+                <div class="gallery-item"><img src="images/marker_techniques.png" alt="Marcadores"></div>
+                <div class="gallery-item"><img src="images/penzil_f1.png" alt="Bocetado F1 Penzil"></div>
+                <div class="gallery-item"><img src="images/light_physics_diagram.png" alt="Luz"></div>
+                <div class="gallery-item"><img src="images/scaffolding_method.png" alt="Scaffolding"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Penzil Pro - El Manual del Diseñador Profesional</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">De la Idea al Render: Técnica e IA</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animaciones simples al hacer scroll
+        const observers = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate').forEach(el => observers.observe(el));
+    </script>
+</body>
+
+</html>
