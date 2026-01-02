@@ -10,7 +10,7 @@ Este repositorio contiene la versión digital de **Super Sketching**, una guía 
 ## 🚀 Acceso Rápido
 
 - 🌐 [**Ver Versión Web**](https://xocostudio.github.io/Book-Penzil-Pro/) - Lector interactivo optimizado.   
-- 📄 [**Generar Libro en PDF**]](https://xocostudio.github.io/Book-Penzil-Pro/index.html?print=true) - Versión lista para imprimir en A4.
+- 📄 [**Generar Libro en PDF**](https://xocostudio.github.io/Book-Penzil-Pro/index.html?print=true) - Versión lista para imprimir en A4.
 - 📢 [**Página Promocional**](https://xocostudio.github.io/Book-Penzil-Pro/landing.html) - Landing page con resumen visual.   https://xocostudio.github.io/Book-Penzil-Pro/landing.html
 
 ---
@@ -66,4 +66,5 @@ El libro está dividido en 5 partes fundamentales que cubren todo el espectro de
 - **IA Generativa:** Ilustraciones de alta gama creadas para explicar conceptos técnicos.
 
 © 2026 Una Guía Integral del Bocetado - El Arte y la Ciencia
+
 
