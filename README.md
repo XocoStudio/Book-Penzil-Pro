@@ -63,9 +63,10 @@ El libro está dividido en 5 partes fundamentales que cubren todo el espectro de
 
 - **HTML5/CSS3:** Maquetación premium con tipografía 'Crimson Pro' e 'Inter'.
 - **JavaScript:** Sistema dinámico para generación de PDF y navegación.
-- **IA Generativa:** Ilustraciones de alta gama creadas para explicar conceptos técnicos.
+
 
 © 2026 Una Guía Integral del Bocetado - El Arte y la Ciencia
+
 
 
 
